@@ -10,6 +10,7 @@ li {
 }
 
 header {
+  width: 100%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +26,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 999;
 }
 
 .logo__img_size {
@@ -47,6 +49,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 500px;
+}
+
+.menu__link_style, .menu__link_style:hover {
+  color: #fff;
 }
 
 .callback {
@@ -87,20 +93,22 @@ header {
 .main {
   height: 100vh;
   width: 100%;
+  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/main.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main.jpg);
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -122,6 +130,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-content__logo {
+  margin-bottom: 50px;
+}
+
+.main-content__text {
+  margin-bottom: 25px;
+}
+
+.main-content__title_weight {
+  font-weight: bold;
 }
 
 .main-content__img_size {

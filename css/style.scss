@@ -29,8 +29,10 @@ li {
 
 // header
 header {
+    width: 100%;
     position: absolute;
     @include flexRow();
+    z-index: 999;
 }
 .logo__img_size {
     width: 80px;
@@ -38,6 +40,9 @@ header {
 .menu__list {
     @include flexRow();
     width: 500px;
+}
+.menu__link_style, .menu__link_style:hover {
+    color: #fff;
 }
 .callback {
     @include flexRow();
@@ -50,12 +55,22 @@ header {
 .main {
     height: 100vh;
     width: 100%;
+    position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../images/main.jpg);
     color: #fff;
-    @include flexRow();
+    @include flexColumn();
 }
 .main-content {
     @include flexColumn();
+}
+.main-content__logo {
+    margin-bottom: 50px;
+}
+.main-content__text {
+    margin-bottom: 25px;
+}
+.main-content__title_weight {
+    font-weight: bold;
 }
 .main-content__img_size {
     width: 500px;
