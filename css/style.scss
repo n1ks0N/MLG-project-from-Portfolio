@@ -1,0 +1,56 @@
+/* _mixins */
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin font {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+/* _vars */
+
+/* main */
+* {
+    @include font();
+}
+li {
+    list-style-type: none;
+}
+
+// header
+header {
+    position: absolute;
+    @include flexRow();
+}
+.logo__img_size {
+    width: 80px;
+}
+.menu__list {
+    @include flexRow();
+    width: 500px;
+}
+.callback {
+    @include flexRow();
+}
+.callback__links {
+    @include flexColumn();
+}
+
+// main
+.main {
+    height: 100vh;
+    width: 100%;
+}
+.main-content__img_size {
+    width: 500px;
+}
