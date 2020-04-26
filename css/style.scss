@@ -136,10 +136,38 @@ header {
 }
 
 // partners
-.carousel-wrapper {
+.carousel-content {
     @include flexRow();
 }
 .carousel-wrapper__img_size {
-    width: 250px;
+    width: 250px !important;
     height: 80px;
+}
+.carousel {
+    width: 33%;
+}
+.carousel-item {
+    transition: transform 1s ease-in-out, opacity .5s ease-in-out;
+}
+
+
+// 
+.header {
+    background-color: #3f3f3f;
+}
+
+// blog
+.main-blog {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.main-content {
+    @include flexColumn();
+}
+.main-item {
+    cursor: pointer;
+}
+.main__img {
+    width: 250px;
+    height: 150px;
 }
