@@ -20,6 +20,10 @@ section {
   padding: 25px;
 }
 
+p {
+  font-size: 17px;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -172,5 +176,90 @@ header {
 
 .about-content__text {
   text-align: justify;
+}
+
+.advantages-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 25px;
+}
+
+.advantages__icon {
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.advantages__icon span {
+  font-size: 22px;
+  line-height: 15px;
+  font-weight: bold;
+}
+
+.advantages__text {
+  font-weight: 600;
+  width: 300px;
+}
+
+.advantages__card:hover .advantages__icon {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.carousel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-wrapper__img_size {
+  width: 250px;
+  height: 80px;
 }
 /*# sourceMappingURL=style.css.map */
