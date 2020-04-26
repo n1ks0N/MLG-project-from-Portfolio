@@ -9,6 +9,17 @@ li {
   list-style-type: none;
 }
 
+section {
+  padding: 75px 0;
+}
+
+.headline__style {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -30,7 +41,7 @@ header {
 }
 
 .logo__img_size {
-  width: 80px;
+  width: 60px;
 }
 
 .menu__list {
@@ -88,6 +99,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 25px;
+}
+
+.callback__link_color, .callback__link_color:hover {
+  color: #fff;
 }
 
 .main {
@@ -96,6 +112,7 @@ header {
   position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/main.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/main.jpg);
+  background-position: center;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,5 +163,14 @@ header {
 
 .main-content__img_size {
   width: 500px;
+}
+
+.about {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.about-content__text {
+  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
