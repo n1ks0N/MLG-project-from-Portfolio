@@ -1,6 +1,8 @@
 $(document).ready(function() {
-    $('.main-item').click(function() {
+    $('.main__text').click(function() {
         window.location.href = 'about.html';
-        console.log('ok');
+    });
+    $('.main__img').click(function() {
+        window.location.href = 'about.html';
     });
 });
