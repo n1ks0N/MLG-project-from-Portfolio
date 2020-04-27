@@ -21,7 +21,7 @@
 	<![endif]-->
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
             <a href="#"><img src="images/logo-sm.jpg" alt="" class="logo__img_size"></a>
         </div>
@@ -47,13 +47,94 @@
     <main>
         <h1 class="headline__style">Наши услуги</h1>
         <div class="buttons">
-            <button type="button" class="btn">Для бизнеса</button>
-            <button type="button" class="btn">Для частных лиц</button>
+            <button type="button" class="btn" id="business">Для бизнеса</button>
+            <button type="button" class="btn" id="individual">Для частных лиц</button>
+        </div>
+        <!-- /buttons -->
+        <div class="services-content">
+            <div class="services__business">
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Абонентское обслуживание</h5>
+                    <p class="services__text">Комплексное юридическое сопровождение деятельности бизнеса и его руководителей</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Представительство в судах</h5>
+                    <p class="services__text">Ведение дел в арбитражных судах и судах общей юрисдикции: взыскание задолженности, оспаривание сделок, взыскание убытков и другие споры</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Банкротство</h5>
+                    <p class="services__text">Комплексное сопровождение процедур банкротства юридических и физических лиц на любой стадии как для должников, так и для кредиторов.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Субсидиарная ответственность</h5>
+                    <p class="services__text">Защита от привлечения к субсидиарной ответственности, а также инициация привлечения контролирующих лиц к субсидиарной ответственности.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Договорное право</h5>
+                    <p class="services__text">Юридическое сопровождение заключения сделок любой сложности: ведение переговоров, составление договоров; проверка контрагента; договорные споры.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Корпоративное право</h5>
+                    <p class="services__text">Защита бизнеса от недобросовестных действий директора, участников, акционеров; обжалование решений. Проведение корпоративных процедур: общие собрания, регистрация изменений и т.п.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+            </div>
+            <div class="services__individual services-content_passive">
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Семейные споры</h5>
+                    <p class="services__text">Споры по разделу имущества супругов; взыскание алиментов; лишение родительских прав.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Трудовые споры</h5>
+                    <p class="services__text">Взыскание заработной платы, неустойки за задержку выплаты, признание увольнения незаконным, восстановление на работе.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Банкротство</h5>
+                    <p class="services__text">Комплексное сопровождение процедуры банкротства физических лиц с полным списанием долгов.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Судебное представительство</h5>
+                    <p class="services__text">Взыскание долгов по расписке, договору; выдел доли в доме, квартире, земельном участке; выселение из квартиры; споры по заливам и другие споры.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Защита прав потребителей и участников долевого строительства</h5>
+                    <p class="services__text">Взыскание неустоек, штрафов, морального вреда за просрочку передачи квартир, а также за некачественные товары и услуги.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="services__item">
+                    <img src="" alt="" class="services__img">
+                    <h5 class="services__title">Сопровождение сделок с недвижимостью</h5>
+                    <p class="services__text">Проверка юридической чистоты объекта, а также контрагента, составление проектов договоров, услуги по сопровождению сделки и регистрации в Росреестре.</p>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
