@@ -162,9 +162,7 @@ header {
     max-width: 1080px;
     margin: 0 auto;
     padding-bottom: 50px;
-    h1.headline__style {
-        padding-top: 125px;
-    }
+    padding-top: 125px;
 }
 .main-content {
     @include flexColumn();
@@ -194,9 +192,19 @@ header {
 }
 
 // services
+.main-services {
+    padding-top: 120px;
+}
 .services-content {
     max-width: 1280px;
     margin: 0 auto;
+}
+.buttons {
+    @include flexRow();
+    justify-content: center;
+}
+.buttons__btn {
+    width: 250px;
 }
 .services__business, .services__individual {
     @include flexRow();
@@ -207,6 +215,9 @@ header {
     margin: 40px;
     position: relative;
     height: 190px;
+    .btn-link {
+        padding: 0;
+    }
 }
 .services__img {
     width: 55px;
@@ -225,8 +236,4 @@ header {
 }
 .services-content_passive {
     display: none;
-}
-.btn-link {
-    position: absolute;
-    bottom: 0;
 }
