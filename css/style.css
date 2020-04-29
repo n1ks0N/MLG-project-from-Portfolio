@@ -286,8 +286,7 @@ header {
 .main-blog {
   max-width: 1080px;
   margin: 0 auto;
-  padding-bottom: 50px;
-  padding-top: 125px;
+  padding: 100px 0;
 }
 
 .main-content {
@@ -337,7 +336,7 @@ header {
 }
 
 .main-services {
-  padding-top: 120px;
+  padding: 100px 0;
 }
 
 .services-content {
@@ -366,7 +365,11 @@ header {
 }
 
 .buttons__btn {
-  width: 250px;
+  width: 275px;
+  height: 45px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .services__business, .services__individual {
@@ -425,7 +428,7 @@ header {
 
 footer {
   width: 100%;
-  background-color: #00347A;
+  background-color: #121923;
   padding: 25px;
   color: #fff;
 }
@@ -465,6 +468,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 425px;
 }
 
 .footer__links {
@@ -496,6 +500,15 @@ footer {
   margin: 0;
 }
 
+.footer__link_color, .footer__link_color:hover {
+  color: #fff;
+}
+
+.footer__privacy-link_color, .footer__privacy-link_color:hover {
+  color: #f2f2f2;
+  font-size: 12px;
+}
+
 .footer__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,5 +524,16 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__social_size {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__privacy {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
 }
 /*# sourceMappingURL=style.css.map */
