@@ -21,7 +21,7 @@
 	<![endif]-->
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
             <a href="#"><img src="images/logo.png" alt="" class="logo__img_size"></a>
         </div>
@@ -44,8 +44,56 @@
         </div>
         <!-- /callback -->
     </header>
-    <main>
-        
+    <main class="main-contacts">
+        <h1 class="headline__style">Контакты</h1>
+        <div class="contacts-content">
+            <div class="contacts-info">
+                <h4 class="">Получите бесплатную консультацию юриста</h4>
+                <div class="contacts-info__item">
+                    <img src="images/" alt="" class="contacts-info__icon">
+                    <p class="contacts-info__text">г. Москва, Рязанский проспект, 30/15, офис 3021/19</p>
+                </div>
+                <div class="contacts-info__item">
+                    <img src="" alt="" class="contacts-info__icon">
+                    <p class="contacts-info__text">м. Окская, м. Рязанский проспект</p>
+                </div>
+                <div class="contacts-info__item">
+                    <img src="" alt="" class="contacts-info__icon">
+                    <p class="contacts-info__text">
+                        <a href="tel:+74951422847" class="callback__link_color">+7 (495) 142-28-47</a>
+                    </p>
+                </div>
+                <div class="contacts-info__item">
+                    <img src="" alt="" class="contacts-info__icon">
+                    <p class="contacts-info__text"></p>
+                </div>
+                <div class="contacts-info__item">
+                    <img src="" alt="" class="contacts-info__icon">
+                    <p class="contacts-info__text"></p>
+                </div>
+            </div>
+            <div class="contacts-form">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="" placeholder="Телефон">
+                    </div>
+                      <div class="form-group">
+                        <select class="form-control" id="">
+                          <option>Telegram</option>
+                          <option>WhatsApp</option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="" rows="3" placeholder="Ваш вопрос"></textarea>
+                    </div>
+                </form>
+                <p class="contacts-form__text-privacy">Нажимая кнопку "Отправить", Вы подтверждаете своё согласие на <a href="privacy.html">обработку персональных данных</a>.</p>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-content">
@@ -79,7 +127,7 @@
             <!-- /button -->
         </div>
         <!-- /content-->
-        <div class="footer__privacy"><a href="" class="footer__privacy-link_color">Политика конфиденциальности</a></div>
+        <div class="footer__privacy"><a href="privacy.html" class="footer__privacy-link_color">Политика конфиденциальности</a></div>
         <!-- /privacy -->
     </footer>
     <!-- Script -->

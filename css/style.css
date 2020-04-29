@@ -24,6 +24,10 @@ p {
   font-size: 17px;
 }
 
+.header {
+  background-color: rgba(63, 63, 63, 0.8);
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -279,11 +283,8 @@ header {
   transition: transform 1s ease-in-out, opacity .5s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-.header {
-  background-color: rgba(63, 63, 63, 0.8);
-}
-
-.main-blog {
+/* blog */
+.main-blog, .privacy, .main-contacts {
   max-width: 1080px;
   margin: 0 auto;
   padding: 100px 0;
@@ -335,6 +336,7 @@ header {
   bottom: 20px;
 }
 
+/* services */
 .main-services {
   padding: 100px 0;
 }
@@ -424,6 +426,11 @@ header {
 
 .services-content_passive {
   display: none;
+}
+
+/* privacy */
+.privacy__text_size {
+  font-size: 12px;
 }
 
 footer {

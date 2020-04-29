@@ -38,6 +38,9 @@ section {
 p {
     font-size: 17px;
 }
+.header {
+    background-color: rgba($color: #3f3f3f, $alpha: .8);
+}
 
 // header
 header {
@@ -108,7 +111,6 @@ header {
 }
 
 // advantages 
-
 .advantages-content {
     @include flexRow();
     justify-content: space-evenly;
@@ -156,13 +158,8 @@ header {
 }
 
 
-// 
-.header {
-    background-color: rgba($color: #3f3f3f, $alpha: .8);
-}
-
-// blog
-.main-blog {
+/* blog */
+.main-blog, .privacy, .main-contacts{
     max-width: 1080px;
     margin: 0 auto;
     padding: 100px 0;
@@ -194,7 +191,7 @@ header {
     bottom: 20px;
 }
 
-// services
+/* services */
 .main-services {
     padding: 100px 0;
 }
@@ -243,6 +240,11 @@ header {
 }
 .services-content_passive {
     display: none;
+}
+
+/* privacy */
+.privacy__text_size {
+    font-size: 12px;
 }
 
 // footer
