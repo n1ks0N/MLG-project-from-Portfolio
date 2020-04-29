@@ -28,5 +28,9 @@ $(document).ready(function() {
         $(this).removeClass('btn-outline-primary');
         $('#business').addClass('btn-outline-primary');
         $('#business').removeClass('btn-primary');
-    })
+    });
+
+    $('.form-group__select').click(function() {
+        $('.form-group__select__disabled').prop('disabled', true);
+    });
 });

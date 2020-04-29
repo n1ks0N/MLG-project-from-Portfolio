@@ -247,6 +247,23 @@ header {
     font-size: 12px;
 }
 
+/* contacts */
+.contacts-content {
+    @include flexRow();
+}
+.contacts-info, .contacts-form {
+    width: 50%;
+}
+.contacts__map {
+    min-height: 440px;
+}
+.contacts__map__text {
+    margin-top: 25px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+
 // footer
 footer {
     width: 100%;
