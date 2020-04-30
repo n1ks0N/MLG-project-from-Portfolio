@@ -329,8 +329,19 @@ footer {
     width: 50px;
     height: 50px;
 }
-.footer__privacy {
+.footer__privacy, .footer__by {
     width: 100%;
+    display: block;
     text-align: center;
     padding-top: 15px;
+}
+.footer__by:hover {
+    text-decoration: none;
+}
+.footer__by__link {
+    color: #EB5757;
+    margin: 0;
+}
+.footer__by__link:hover {
+    color: orangered;
 }
