@@ -111,6 +111,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-right: 25px;
 }
 
@@ -175,7 +178,12 @@ header {
 }
 
 .main-content__img_size {
-  height: 300px;
+  height: 200px;
+}
+
+.carousel__img_size {
+  max-height: 150px;
+  margin: 0 15px;
 }
 
 .about {
@@ -185,6 +193,10 @@ header {
 
 .about-content__text {
   text-align: justify;
+}
+
+.advantages {
+  padding-top: 0px;
 }
 
 .advantages-content {
@@ -205,7 +217,28 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 25px;
+}
+
+.advantages__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .advantages__icon {
@@ -242,7 +275,7 @@ header {
 
 .advantages__text {
   font-weight: 600;
-  width: 300px;
+  text-align: center;
 }
 
 .advantages__card:hover .advantages__icon {
@@ -562,7 +595,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 425px;
+  width: 500px;
 }
 
 .footer__links {
