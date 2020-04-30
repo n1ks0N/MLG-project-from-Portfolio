@@ -3,10 +3,10 @@ $(document).ready(function() {
     // in blog
     
     $('.main__text').click(function() {
-        window.location.href = 'about.html';
+        window.location.href = 'blog.html';
     });
     $('.main__img').click(function() {
-        window.location.href = 'about.html';
+        window.location.href = 'blog.html';
     });
 
     // services
@@ -30,15 +30,19 @@ $(document).ready(function() {
         $('#business').removeClass('btn-primary');
     });
 
+    // form in contacts
+
+    $('.btn__adressToContacts').click(function() {
+        window.location.href = 'contacts.html';
+    })
+
     $('.form-group__select').click(function() {
         $('.form-group__select__disabled').prop('disabled', true);
     });
 
     // test on trademark
     
-    if ($('.footer__by').length || $('.footer__by__link').length) {
-        console.log('yes');
-    } else {
+    if ($('.footer__by').length || $('.footer__by__link').length) {} else {
         alert('Верните текст - "Proudly made by n1ks_ON. Designed and coded." Связь с разработчиком - https://kwork.ru/user/n1ks_on');
         $('body, html').css('display', 'none');
     }
