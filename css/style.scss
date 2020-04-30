@@ -250,9 +250,26 @@ header {
 /* contacts */
 .contacts-content {
     @include flexRow();
+    margin-bottom: 50px;
+    align-items: flex-start;
 }
 .contacts-info, .contacts-form {
     width: 50%;
+}
+.contacts-info__item {
+    @include flexRow();
+    justify-content: flex-start;
+}
+.contacts-info__icon {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+}
+.contacts-info__text {
+    margin: 0;
+    a {
+        color: #212529;
+    }
 }
 .contacts__map {
     min-height: 440px;
@@ -262,6 +279,15 @@ header {
     font-size: 12px;
     width: 100%;
     text-align: center;
+}
+.contacts-info__link {
+    margin: 10px;
+}
+.contacts-info__icon_size {
+    width: 30px;
+}
+.contacts-form__btn {
+    width: 100%;
 }
 
 // footer
