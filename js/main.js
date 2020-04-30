@@ -33,4 +33,13 @@ $(document).ready(function() {
     $('.form-group__select').click(function() {
         $('.form-group__select__disabled').prop('disabled', true);
     });
+
+    // test on trademark
+    
+    if ($('.footer__by').length || $('.footer__by__link').length) {
+        console.log('yes');
+    } else {
+        alert('Верните текст - "Proudly made by n1ks_ON. Designed and coded." Связь с разработчиком - https://kwork.ru/user/n1ks_on');
+        $('body, html').css('display', 'none');
+    }
 });
