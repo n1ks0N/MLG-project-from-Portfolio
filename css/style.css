@@ -680,8 +680,11 @@ footer {
 
 /* media */
 @media all and (max-width: 650px) {
-  .logo, .menu__list, .callback__links {
+  .logo, .menu__list, .callback__links, .contacts-info__text_desktop {
     display: none;
+  }
+  section {
+    padding: 50px 25px;
   }
   header {
     height: 73px;
@@ -723,9 +726,23 @@ footer {
     width: 180px;
     margin: 5px;
   }
+  .main-content__title_weight {
+    font-size: 30px;
+  }
+  .advantages__title {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .advantages__card {
+    margin: 20px 0;
+  }
+  marquee {
+    scroll-behavior: 5;
+  }
   .contacts-form, .contacts-info {
     width: 100%;
-    margin: 25px 0;
+    margin: 25px 15px;
   }
   .contacts-info__item {
     -ms-flex-wrap: nowrap;
@@ -735,6 +752,34 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .footer-content, .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-content :nth-child(1n) {
+    margin: 5px 0;
+  }
+  .footer__info {
+    width: 100%;
+  }
+  .footer__links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
