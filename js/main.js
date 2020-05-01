@@ -1,6 +1,13 @@
 $(document).ready(function() {
+
+    // header
+
+    $('.menu__hamburger').click(function() {
+        $('.menu__hamburger__window').toggleClass('menu__hamburger__window__animateOn');
+        $('.menu__hamburger').toggleClass('menu__hamburger__animateOn');
+    });
     
-    // in blog
+    // blog
     
     $('.main__text').click(function() {
         window.location.href = 'blog.html';
@@ -30,7 +37,7 @@ $(document).ready(function() {
         $('#business').removeClass('btn-primary');
     });
 
-    // form in contacts
+    // to form in contacts
 
     $('.btn__adressToContacts').click(function() {
         window.location.href = 'contacts.html';
