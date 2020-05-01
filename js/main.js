@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('.main__img').click(function() {
         window.location.href = 'blog.html';
     });
-    if ($(window).width() <= 425) $('.main__img').prop('align', 'center');
+    // if ($(window).width() <= 425) $('.main__img').prop('align', 'center');
 
     // services
 

@@ -429,13 +429,16 @@ footer {
     }
 
     // blog
-    .main__item {
+    .main-item {
         @include flexColumn();
         padding: 25px;
     }
     .main__img {
         margin-bottom: 25px;
         margin-right: 0;
+    }
+    .main__text {
+        text-align: center;
     }
     .main-blog {
         padding-bottom: 0;
