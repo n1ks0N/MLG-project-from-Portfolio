@@ -740,6 +740,23 @@ footer {
   marquee {
     scroll-behavior: 5;
   }
+  .main__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .contacts-form, .contacts-info {
     width: 100%;
     margin: 25px 15px;
@@ -783,7 +800,7 @@ footer {
   }
 }
 
-@media all and (min-width: 650px) {
+@media all and (min-width: 425px) {
   .menu__hamburger, .menu__hamburger__window {
     display: none;
   }

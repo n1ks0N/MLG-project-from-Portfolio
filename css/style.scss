@@ -429,6 +429,9 @@ footer {
     }
 
     // blog
+    .main__item {
+        @include flexColumn();
+    }
 
     // contacts
     .contacts-form, .contacts-info {
@@ -456,7 +459,7 @@ footer {
         align-items: center;
     }
 }
-@media all and (min-width: 650px) {
+@media all and (min-width: 425px) {
     .menu__hamburger, .menu__hamburger__window {
         display: none;
     }
