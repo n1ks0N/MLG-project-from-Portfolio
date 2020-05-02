@@ -686,7 +686,7 @@ footer {
 
 /* media */
 @media all and (max-width: 625px) {
-  .logo, .menu__list, .callback__links, .contacts-info__title {
+  .logo, .menu__list, .callback__links {
     display: none;
   }
   section {
@@ -796,6 +796,7 @@ footer {
   }
   .contacts__title {
     padding-bottom: 0;
+    padding-top: 0;
   }
   .contacts-form, .contacts-info {
     width: 100%;
@@ -810,7 +811,8 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footer-content, .footer__info {
+  .con
+.footer-content, .footer__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

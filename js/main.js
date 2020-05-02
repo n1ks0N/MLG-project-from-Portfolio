@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
 
     // hamburger in header
 
@@ -9,11 +9,12 @@ $(document).ready(function() {
 
     // slider in about
 
-    setInterval(() => {
-        $('.carousel__first').toggleClass('opacity');
-        $('.carousel__second').toggleClass('opacity');
-        console.log('check');
-    }, 5000);
+    let index = 0;
+
+    setInterval((items) => {
+        index = (index + 1) % items.length;
+        items.addClass('opacity').eq(index).removeClass('opacity');
+    }, 5000, $('.carousel__part'));
     
     // blog
     

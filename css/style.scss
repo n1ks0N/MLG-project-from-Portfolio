@@ -371,7 +371,7 @@ footer {
 
 /* media */
 @media all and (max-width: 625px) {
-    .logo, .menu__list, .callback__links, .contacts-info__title {
+    .logo, .menu__list, .callback__links {
         display: none;
     }
     
@@ -460,6 +460,7 @@ footer {
     // contacts
     .contacts__title {
         padding-bottom: 0;
+        padding-top: 0;
     }
     .contacts-form, .contacts-info {
         width: 100%;
@@ -471,6 +472,7 @@ footer {
     .contacts-info :last-child {
         justify-content: center;
     }
+    .con
 
     // footer
     .footer-content, .footer__info {
