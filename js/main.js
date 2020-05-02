@@ -1,11 +1,13 @@
 $(document).ready(function() {
 
-    // header
+    // hamburger in header
 
     $('.menu__hamburger').click(function() {
         $('.menu__hamburger__window').toggleClass('menu__hamburger__window__animateOn');
         $('.menu__hamburger').toggleClass('menu__hamburger__animateOn');
     });
+
+    // slider in about
 
     setInterval(() => {
         $('.carousel__first').toggleClass('opacity');
@@ -22,7 +24,7 @@ $(document).ready(function() {
         window.location.href = 'blog.html';
     });
 
-    // services
+    // content in services
 
     $('#business').click(function() {
         $('.services__business').removeClass('services-content_passive');
@@ -43,7 +45,7 @@ $(document).ready(function() {
         $('#business').removeClass('btn-primary');
     });
 
-    // to form in contacts
+    // from anyway to form in contacts
 
     $('.btn__adressToContacts').click(function() {
         window.location.href = 'contacts.html';
