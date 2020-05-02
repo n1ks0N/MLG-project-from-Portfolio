@@ -686,7 +686,7 @@ footer {
 
 /* media */
 @media all and (max-width: 625px) {
-  .logo, .menu__list, .callback__links {
+  .logo, .menu__list, .callback__links, .contacts-info__title {
     display: none;
   }
   section {
@@ -733,7 +733,7 @@ footer {
     margin: 5px;
   }
   .main-content__title_weight {
-    font-size: 30px;
+    font-size: 28px;
   }
   .advantages__title {
     font-size: 30px;
@@ -743,8 +743,28 @@ footer {
   .advantages__card {
     margin: 20px 0;
   }
-  marquee {
-    scroll-behavior: 5;
+  .carousel-content {
+    height: 700px;
+  }
+  .carousel__part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .main-item {
     display: -webkit-box;
@@ -774,13 +794,12 @@ footer {
   .main-blog {
     padding-bottom: 0;
   }
-  .contacts-content {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+  .contacts__title {
+    padding-bottom: 0;
   }
   .contacts-form, .contacts-info {
     width: 100%;
-    margin: 25px 15px;
+    margin: 15px;
   }
   .contacts-info__item {
     -ms-flex-wrap: nowrap;

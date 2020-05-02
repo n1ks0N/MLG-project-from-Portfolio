@@ -371,7 +371,7 @@ footer {
 
 /* media */
 @media all and (max-width: 625px) {
-    .logo, .menu__list, .callback__links {
+    .logo, .menu__list, .callback__links, .contacts-info__title {
         display: none;
     }
     
@@ -422,7 +422,7 @@ footer {
     // about
 
     .main-content__title_weight {
-        font-size: 30px;
+        font-size: 28px;
     }
     .advantages__title {
         font-size: 30px;
@@ -432,8 +432,13 @@ footer {
     .advantages__card {
         margin: 20px 0;
     }
-    marquee {
-        scroll-behavior: 5;
+    .carousel-content {
+        height: 700px;
+    }
+    .carousel__part {
+        @include flexColumn();
+        height: 100%;
+        justify-content: space-around;
     }
 
     // blog
@@ -453,12 +458,12 @@ footer {
     }
 
     // contacts
-    .contacts-content {
-        flex-wrap: wrap-reverse;
+    .contacts__title {
+        padding-bottom: 0;
     }
     .contacts-form, .contacts-info {
         width: 100%;
-        margin: 25px 15px;
+        margin: 15px;
     }
     .contacts-info__item {
         flex-wrap: nowrap;

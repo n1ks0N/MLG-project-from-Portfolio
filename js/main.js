@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // hamburger in header
 
-    $('.menu__hamburger').click(function() {
+    $('.menu__hamburger').click(() => {
         $('.menu__hamburger__window').toggleClass('menu__hamburger__window__animateOn');
         $('.menu__hamburger').toggleClass('menu__hamburger__animateOn');
     });
@@ -17,16 +17,16 @@ $(document).ready(function() {
     
     // blog
     
-    $('.main__text').click(function() {
+    $('.main__text').click(() => {
         window.location.href = 'blog.html';
     });
-    $('.main__img').click(function() {
+    $('.main__img').click(() => {
         window.location.href = 'blog.html';
     });
 
     // content in services
 
-    $('#business').click(function() {
+    $('#business').click(() => {
         $('.services__business').removeClass('services-content_passive');
         $('.services__individual').addClass('services-content_passive');
 
@@ -35,9 +35,9 @@ $(document).ready(function() {
         $('#individual').addClass('btn-outline-primary');
         $('#individual').removeClass('btn-primary');
     });
-    $('#individual').click(function() {
-        $('.services__business').addClass('services-content_passive');
+    $('#individual').click(() => {
         $('.services__individual').removeClass('services-content_passive');
+        $('.services__business').addClass('services-content_passive');
 
         $(this).addClass('btn-primary');
         $(this).removeClass('btn-outline-primary');
@@ -47,11 +47,11 @@ $(document).ready(function() {
 
     // from anyway to form in contacts
 
-    $('.btn__adressToContacts').click(function() {
+    $('.btn__adressToContacts').click(() => {
         window.location.href = 'contacts.html';
     })
 
-    $('.form-group__select').click(function() {
+    $('.form-group__select').click(() => {
         $('.form-group__select__disabled').prop('disabled', true);
     });
 
