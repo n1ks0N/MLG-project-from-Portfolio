@@ -6,6 +6,12 @@ $(document).ready(function() {
         $('.menu__hamburger__window').toggleClass('menu__hamburger__window__animateOn');
         $('.menu__hamburger').toggleClass('menu__hamburger__animateOn');
     });
+
+    setInterval(() => {
+        $('.carousel__first').toggleClass('opacity');
+        $('.carousel__second').toggleClass('opacity');
+        console.log('check');
+    }, 5000);
     
     // blog
     

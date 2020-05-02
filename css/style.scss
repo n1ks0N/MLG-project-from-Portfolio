@@ -100,10 +100,6 @@ header {
 .main-content__img_size {
     height: 200px;
 }
-.carousel__img_size {
-    max-height: 150px;
-    margin: 0 15px;
-}
 
 
 // about
@@ -156,17 +152,24 @@ header {
 
 // partners
 .carousel-content {
-    @include flexRow();
+    position: relative;
+    height: 150px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
-.carousel-wrapper__img_size {
-    width: 250px !important;
-    height: 80px;
+.carousel__img_size {
+    max-height: 150px;
+    max-width: 200px;
 }
 .carousel {
     width: 33%;
 }
-.carousel-item {
-    transition: transform 1s ease-in-out, opacity .5s ease-in-out;
+.carousel__part {
+    transition: all 1s ease;
+    position: absolute;
+    @include flexRow();
+    justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -359,6 +362,11 @@ footer {
 }
 .footer__by__link:hover {
     color: orangered;
+}
+
+// animate
+.opacity {
+    opacity: 0;
 }
 
 /* media */

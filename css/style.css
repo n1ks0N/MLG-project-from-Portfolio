@@ -181,11 +181,6 @@ header {
   height: 200px;
 }
 
-.carousel__img_size {
-  max-height: 150px;
-  margin: 0 15px;
-}
-
 .about {
   max-width: 1080px;
   margin: 0 auto;
@@ -284,6 +279,25 @@ header {
 }
 
 .carousel-content {
+  position: relative;
+  height: 150px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.carousel__img_size {
+  max-height: 150px;
+  max-width: 200px;
+}
+
+.carousel {
+  width: 33%;
+}
+
+.carousel__part {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,22 +312,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.carousel-wrapper__img_size {
-  width: 250px !important;
-  height: 80px;
-}
-
-.carousel {
-  width: 33%;
-}
-
-.carousel-item {
-  -webkit-transition: opacity .5s ease-in-out, -webkit-transform 1s ease-in-out;
-  transition: opacity .5s ease-in-out, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity .5s ease-in-out;
-  transition: transform 1s ease-in-out, opacity .5s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 /* blog */
@@ -676,6 +678,10 @@ footer {
 
 .footer__by__link:hover {
   color: orangered;
+}
+
+.opacity {
+  opacity: 0;
 }
 
 /* media */
