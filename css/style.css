@@ -850,5 +850,8 @@ footer {
   .menu__hamburger, .menu__hamburger__window {
     display: none;
   }
+  .carousel__first {
+    top: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
